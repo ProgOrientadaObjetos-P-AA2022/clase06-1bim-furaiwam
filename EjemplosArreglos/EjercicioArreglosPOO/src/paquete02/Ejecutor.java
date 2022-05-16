@@ -29,7 +29,7 @@ public class Ejecutor {
         calificacionesEstudiante = new double[numerocalificaciones];
         
         for (int i = 0; i < numerocalificaciones; i++) {
-            System.out.printf("Ingrese calificación %d\n", i+1);
+            System.out.printf("Ingrese calificación \n", i+1);
             calificacionesEstudiante[i] = entrada.nextDouble();
         }
         

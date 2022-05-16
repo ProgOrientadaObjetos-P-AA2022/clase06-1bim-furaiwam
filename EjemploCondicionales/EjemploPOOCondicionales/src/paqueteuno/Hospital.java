@@ -92,8 +92,22 @@ public class Hospital {
     public double obtenerPresupuestoAnual(){
         return presupuestoAnual;
     }
-    
-    
-    
+
+    public  String toString() {
+        String ed="";
+        System.out.printf("Datos Hospital\n"
+                        + "Nombre del hospital: %s\n"
+                        + "Ciudad del hospital: %s\n"
+                        + "Número de camas: %d\n"
+                        + "Número de doctores: %d\n"
+                        + "Presupuesto anual: %.2f\n",
+                ed,obtenerNombreHospital(),
+                obtenerCiudadHospital(),
+                obtenerNumeroCamas(),
+                obtenerNumeroDoctores(),
+                obtenerPresupuestoAnual());
+
+    return ed;
+    }
     
 }

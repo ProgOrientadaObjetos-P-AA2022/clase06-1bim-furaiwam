@@ -32,8 +32,11 @@ public class ArchivoEscritura {
     // agrega registros al archivo
     public void agregarRegistros() {
         try {
+            String tmp="/home/furax/Descargas/programacion/clase06-1bim-furaiwam/EjemploCiclosRepetitivos/ejemplo-ciclo-while-vendedor/data";
+
             
-            String rutaArchivo = String.format("data/%s.txt", 
+            String rutaArchivo = String.format("%s/%s.txt",
+                    tmp,
                     obtenerNombreArchivo());
             salidaArchivo = new Formatter(rutaArchivo);
             

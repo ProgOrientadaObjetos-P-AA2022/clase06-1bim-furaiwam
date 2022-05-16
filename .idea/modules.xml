@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/EjemploCiclosRepetitivos/EjemploCiclosRepetitivos.iml" filepath="$PROJECT_DIR$/EjemploCiclosRepetitivos/EjemploCiclosRepetitivos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EjemploCondicionales/EjemploCondicionales.iml" filepath="$PROJECT_DIR$/EjemploCondicionales/EjemploCondicionales.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EjemplosArreglos/EjercicioArregloObjetosPOO/EjercicioArregloObjetosPOO.iml" filepath="$PROJECT_DIR$/EjemplosArreglos/EjercicioArregloObjetosPOO/EjercicioArregloObjetosPOO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EjemplosArreglos/EjercicioArreglosPOO/EjercicioArreglosPOO.iml" filepath="$PROJECT_DIR$/EjemplosArreglos/EjercicioArreglosPOO/EjercicioArreglosPOO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/clase06-1bim-furaiwam.iml" filepath="$PROJECT_DIR$/.idea/clase06-1bim-furaiwam.iml" />
+    </modules>
+  </component>
+</project>
