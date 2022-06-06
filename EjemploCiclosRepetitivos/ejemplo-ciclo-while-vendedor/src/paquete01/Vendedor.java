@@ -10,7 +10,6 @@ package paquete01;
  * @author reroes
  */
 public class Vendedor {
-
     private String nombres;
     private int edad;
     private double pagoMensual;

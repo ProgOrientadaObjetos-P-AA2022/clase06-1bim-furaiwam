@@ -25,13 +25,13 @@ public class Ejecutor {
         double presupuestoAnio;
         int opcion;
 
-        // Proceso de discriminación en función de la opción que 
+        // Proceso de discriminación en función de la opción que
         // selecciona el usuario
         System.out.println("Que tipo de hospital desea ingesar\nOpción 1"
                 + "\nOpción 2\nOpción 3");
         opcion = entrada.nextInt();
 
-        entrada.nextLine(); // limpiar el buffer 
+        entrada.nextLine(); // limpiar el buffer
 
         // Uso de condicionales compuestos
         if (opcion == 1) {
@@ -47,22 +47,11 @@ public class Ejecutor {
 
             // se procede a crear el objeto, haciendo uso del constructor
             // que corresponda.
-            Hospital hosp1 = new Hospital(nombreHospital, numeroDeCamas, 
+            Hospital hosp1 = new Hospital(nombreHospital, numeroDeCamas,
                     numeroDeDoctores,
                     presupuestoAnio);
 
-            /*System.out.printf("Datos Hospital\n"
-                    + "Nombre del hospital: %s\n"
-                    + "Ciudad del hospital: %s\n"
-                    + "Número de camas: %d\n"
-                    + "Número de doctores: %d\n"
-                    + "Presupuesto anual: %.2f\n",
-                   // hosp1.obtenerNombreHospital(),
-                    //hosp1.obtenerCiudadHospital(),
-                    //hosp1.obtenerNumeroCamas(),
-                    //hosp1.obtenerNumeroDoctores(),
-                   // hosp1.obtenerPresupuestoAnual());*/
-            System.out.printf(" %s\n"," %s\n"," %s\n","%d\n","%d","%.2f",hosp1);
+            System.out.printf(hosp1.toString());
         } else {
             if (opcion == 2) {
                 // Ingreso de datos para el tipo seleccionado
@@ -74,22 +63,10 @@ public class Ejecutor {
                 numeroDeDoctores = entrada.nextInt();
                 // se procede a crear el objeto, haciendo uso del constructor
                 // que corresponda.
-                Hospital hosp2 = new Hospital(nombreHospital, numeroDeCamas, 
+                Hospital hosp2 = new Hospital(nombreHospital, numeroDeCamas,
                         numeroDeDoctores);
 
-               /* System.out.printf("Datos Hospital\n"
-                        + "Nombre del hospital: %s\n"
-                        + "Ciudad del hospital: %s\n"
-                        + "Número de camas: %d\n"
-                        + "Número de doctores: %d\n"
-                        + "Presupuesto anual: %.2f\n",
-                        hosp2.obtenerNombreHospital(),
-                        hosp2.obtenerCiudadHospital(),
-                        hosp2.obtenerNumeroCamas(),
-                        hosp2.obtenerNumeroDoctores(),
-                        hosp2.obtenerPresupuestoAnual());*/
-                System.out.printf(" %s\n"," %s\n"," %s\n","%d\n","%d","%.2f",hosp2);
-
+                System.out.printf(hosp2.toString());
             } else {
                 if (opcion == 3) {
                     // Ingreso de datos para el tipo seleccionado
@@ -105,30 +82,19 @@ public class Ejecutor {
                     presupuestoAnio = entrada.nextDouble();
                     // se procede a crear el objeto, haciendo uso del constructor
                     // que corresponda.
-                    Hospital hosp3 = new Hospital(nombreHospital, 
-                            ciudadDeHospital, numeroDeCamas, 
+                    Hospital hosp3 = new Hospital(nombreHospital,
+                            ciudadDeHospital, numeroDeCamas,
                             numeroDeDoctores,
                             presupuestoAnio);
 
-                    /*System.out.printf("Datos Hospital\n"
-                            + "Nombre del hospital: %s\n"
-                            + "Ciudad del hospital: %s\n"
-                            + "Número de camas: %d\n"
-                            + "Número de doctores: %d\n"
-                            + "Presupuesto anual: %.2f\n",
-                            hosp3.obtenerNombreHospital(),
-                            hosp3.obtenerCiudadHospital(),
-                            hosp3.obtenerNumeroCamas(),
-                            hosp3.obtenerNumeroDoctores(),
-                            hosp3.obtenerPresupuestoAnual());+*/
-                    System.out.printf(" %s\n",hosp3);
-
-
+                    System.out.printf(hosp3.toString());
                 } else {
                     System.out.println("Opción fuera de rango");
                 }
             }
         }
+
+
 
     }
 

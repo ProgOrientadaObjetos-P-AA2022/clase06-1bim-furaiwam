@@ -12,8 +12,8 @@ public class Vendedor {
     private double salarioMinimo;
     private int numeroAutos;
     private double comisionPorAuto;
-    
-    
+
+
     public Vendedor(String n, int e, double sMinimo, int nAutos){
         nombres = n;
         edad = e;
@@ -24,49 +24,49 @@ public class Vendedor {
     public void establecerNombres(String c){
         nombres = c;
     }
-    
+
     public void establecerEdad(int c){
         edad = c;
     }
-    
+
     public void calcularPagoMensual(){
-        pagoMensual = obtenerSalarioMinimo() + 
+        pagoMensual = obtenerSalarioMinimo() +
                 (obtenerComisionPorAuto() * obtenerNumeroAutos());
     }
-    
+
     public void establecerSalarioMinimo(double s){
         salarioMinimo = s;
     }
-    
+
     public void establecerNumeroAutos(int s){
         numeroAutos = s;
     }
-    
+
     // comisionPorAuto;
     public void establecerComisionPorAuto(double s){
         comisionPorAuto = s;
     }
-    
+
     public String obtenerNombres(){
         return nombres;
     }
-    
+
     public int obtenerEdad(){
         return edad;
     }
-    
+
     public double obtenerPagoMensual(){
         return pagoMensual;
     }
-    
+
     public double obtenerSalarioMinimo(){
         return salarioMinimo;
     }
-    
+
     public int obtenerNumeroAutos(){
         return numeroAutos;
     }
-    
+
     public double obtenerComisionPorAuto(){
         return comisionPorAuto;
     }

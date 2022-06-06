@@ -12,34 +12,31 @@ public class ArchivoEscritura {
     private String nombreArchivo;
     private String dataFinal;
     private Formatter salidaArchivo;
-    
+
     public void establecerNombreArchivo(String n){
         nombreArchivo = n;
     }
-    
+
     public void establecerDataFinal(String n){
         dataFinal = n;
     }
-    
+
     public String obtenerNombreArchivo(){
         return nombreArchivo;
     }
-    
+
     public String obtenereDataFinal(){
         return dataFinal;
     }
-    
+
     // agrega registros al archivo
     public void agregarRegistros() {
         try {
-            String tmp="/home/furax/Descargas/programacion/clase06-1bim-furaiwam/EjemploCiclosRepetitivos/ejemplo-ciclo-while-vendedor/data";
 
-            
-            String rutaArchivo = String.format("%s/%s.txt",
-                    tmp,
+            String rutaArchivo = String.format("data/%s.txt",
                     obtenerNombreArchivo());
             salidaArchivo = new Formatter(rutaArchivo);
-            
+
             salidaArchivo.format("%s", obtenereDataFinal());
             salidaArchivo.close();
 
@@ -50,6 +47,4 @@ public class ArchivoEscritura {
 
         }
     }
-       
-
 }
