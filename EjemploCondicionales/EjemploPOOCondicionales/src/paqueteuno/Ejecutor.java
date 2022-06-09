@@ -51,7 +51,6 @@ public class Ejecutor {
                     numeroDeDoctores,
                     presupuestoAnio);
 
-            System.out.printf(hosp1.toString());
         } else {
             if (opcion == 2) {
                 // Ingreso de datos para el tipo seleccionado
@@ -66,7 +65,7 @@ public class Ejecutor {
                 Hospital hosp2 = new Hospital(nombreHospital, numeroDeCamas,
                         numeroDeDoctores);
 
-                System.out.printf(hosp2.toString());
+
             } else {
                 if (opcion == 3) {
                     // Ingreso de datos para el tipo seleccionado
@@ -87,14 +86,11 @@ public class Ejecutor {
                             numeroDeDoctores,
                             presupuestoAnio);
 
-                    System.out.printf(hosp3.toString());
                 } else {
                     System.out.println("Opción fuera de rango");
                 }
             }
         }
-
-
 
     }
 

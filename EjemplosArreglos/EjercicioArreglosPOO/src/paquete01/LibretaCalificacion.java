@@ -10,7 +10,6 @@ package paquete01;
  * @author reroes
  */
 public class LibretaCalificacion {
-
     private String estudiante;
     private double promedio;
     private String promedioCualitativo;
@@ -83,14 +82,14 @@ public class LibretaCalificacion {
     @Override
     public String toString() {
         String cadena = "Libreta de Calificaciones\n";
-        cadena = String.format("%sNombre: %s\nCalificaciones:\n", cadena,
+        cadena = String.format("%sNombre: %s\nCalificaciones:", cadena,
                 obtenerEstudiante());
-        for (int i = 0; i < obtenerCalificaciones().length; i++) {
-            cadena = String.format("%s\t\t%.2f\n", cadena,
+        for (int i = 0; i < obtenerCalificaciones().length; i++) {//obtener la calificaciones que se piden
+            cadena = String.format("%s %.2f  ", cadena,//  \t\ tabular
                     obtenerCalificaciones()[i]);
         }
-        cadena = String.format("%sPromedio calificaciones: %.2f"
-                + "Promedio cuantitativo: %s",
+        cadena = "\n" + String.format("%s\nPromedio calificaciones: %.2f" + " "
+                        + "Promedio cuantitativo: %s\n",
                 cadena, obtenerPromedio(), obtenerPromedioCualitativo());
         return cadena;
     }

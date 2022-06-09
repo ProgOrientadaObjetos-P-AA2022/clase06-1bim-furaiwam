@@ -18,7 +18,7 @@ public class Ejecutor {
         String opcion;
         Scanner entrada = new Scanner(System.in);
         String cadenaFinal;
-        // Inicio de proceso iterativo 
+        // Inicio de proceso iterativo
         bandera = true;
         cadenaFinal = ""; // inicializo la variable que contendrá la cadena
         // final.
@@ -55,7 +55,7 @@ public class Ejecutor {
             }
 
         }
-        // cuando se sale del ciclo repetitivo debemos enviar toda la 
+        // cuando se sale del ciclo repetitivo debemos enviar toda la
         // cadenaFinal a un archivo
         ArchivoEscritura archivo = new ArchivoEscritura(); // objeto para crear
         // archivo
